@@ -23,6 +23,5 @@ class MenuViewTest(TestCase):
         item_list = [f"{item.title} : {str(item.price)}" for item in items]
         
         self.assertListEqual(item_list, expected_values)
-        self.assertIs
         
         
