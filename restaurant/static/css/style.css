@@ -59,11 +59,19 @@ nav ul {
     text-align: center;
     padding-inline-start: 0rem;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+nav ul li#logout {
+    position: absolute;
+    right: 0;
+    margin-right: 6rem;
 }
 
 nav ul a {
@@ -133,6 +141,13 @@ input{
     display: block;
     color: #fff;
     line-height: 25px;
+  }
+
+  button#logout-btn {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
   }
 
 #hero {
@@ -209,6 +224,11 @@ footer p {
     padding-bottom: 1rem;
   }
 
+  .column.login {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .column figure {
     padding: 0px 12px;
 
@@ -251,5 +271,23 @@ footer p {
 
     #button{
         width: 100%;
+    }
+
+    nav ul {
+        list-style: none;
+        font-size: 1rem;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: left;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    nav ul li#logout {
+       margin-right: 2rem;
+       font-size: 0.5rem;
     }
   }

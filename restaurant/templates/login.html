@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Login to Little Lemon</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'img/logo.png' %}">
+    </header>
+    <section>
+        <article>
+            <div class="row">
+                <div class="column login">
+                    
+                    <form action="" method="POST" id="loginform"  autocomplete="off">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <div>
+                            <button type="submit" id="button">login</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>    
+        </article>
+        
+    </section>
+
+    <script>
+        const password = document.getElementById("id_password");
+        password.type = "password";
+      
+    </script>
+</body>
+</html>
+    
+

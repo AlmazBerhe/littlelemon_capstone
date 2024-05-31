@@ -1,0 +1,22 @@
+{% load static %}
+<header>
+    <img src="{% static 'img/logo.png' %}">
+</header>
+<nav>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a>
+        </li>
+        <li><a href="{% url 'about' %}">About</a>
+        </li>
+        <li><a href="{% url 'menu' %}">Menu</a>
+        </li>
+        <li><a href="{% url 'book' %}">Book</a>
+        </li>
+        <li id="logout"><form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit" id="logout-btn">Logout</button>
+        </form>
+        </li>
+     
+    </ul>
+</nav>
