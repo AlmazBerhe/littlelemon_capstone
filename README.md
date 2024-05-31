@@ -51,6 +51,6 @@ Insomnia (or other API testing tools)
 <li>auth/token/login/  - obtain a token</li>
 <li>auth/users - view users</li>
 <li>restaurant/menu - add menu item (POST)</li>
-<li>restaurant/menu/<id> - view single menu item - json response (GET)</li>
+<li>restaurant/menu/menuitemid - view single menu item - json response (GET)</li>
 <li>restaurant/bookings - view all bookings - json response (GET)</li>
 </ul>
